@@ -1,0 +1,380 @@
+{
+  "name":"Switzerland",
+  "type":"l",
+  "id":"swi switz"
+},
+{
+  "name":"Adriatic Sea",
+  "type":"w",
+  "id":"adr adriatic"
+},
+{
+  "name":"Aegean Sea",
+  "type":"w",
+  "id":"aeg aegean"
+},
+{
+  "name":"Albania",
+  "type":"l",
+  "id":"alb"
+},
+{
+  "name":"Ankara",
+  "type":"T",
+  "id":"ank"
+},
+{
+  "name":"Apulia",
+  "type":"l",
+  "id":"apu"
+},
+{
+  "name":"Armenia",
+  "type":"l",
+  "id":"arm"
+},
+{
+  "name":"Baltic Sea",
+  "type":"w",
+  "id":"bal baltic"
+},
+{
+  "name":"Barents Sea",
+  "type":"w",
+  "id":"bar barents"
+},
+{
+  "name":"Belgium",
+  "type":"x",
+  "id":"bel"
+},
+{
+  "name":"Berlin",
+  "type":"G",
+  "id":"ber"
+},
+{
+  "name":"Black Sea",
+  "type":"w",
+  "id":"bla black"
+},
+{
+  "name":"Bohemia",
+  "type":"l",
+  "id":"boh"
+},
+{
+  "name":"Brest",
+  "type":"F",
+  "id":"bre"
+},
+{
+  "name":"Budapest",
+  "type":"A",
+  "id":"bud"
+},
+{
+  "name":"Bulgaria",
+  "type":"x",
+  "id":"bul"
+},
+{
+  "name":"Burgundy",
+  "type":"l",
+  "id":"bur"
+},
+{
+  "name":"Clyde",
+  "type":"l",
+  "id":"cly"
+},
+{
+  "name":"Constantinople",
+  "type":"T",
+  "id":"con"
+},
+{
+  "name":"Denmark",
+  "type":"x",
+  "id":"den"
+},
+{
+  "name":"Eastern Mediterranean",
+  "type":"w",
+  "id":"eastmed ems eme eas emed east eastern"
+},
+{
+  "name":"Edinburgh",
+  "type":"E",
+  "id":"edi"
+},
+{
+  "name":"English Channel",
+  "type":"w",
+  "id":"eng english channel ech"
+},
+{
+  "name":"Finland",
+  "type":"l",
+  "id":"fin"
+},
+{
+  "name":"Galicia",
+  "type":"l",
+  "id":"gal"
+},
+{
+  "name":"Gascony",
+  "type":"l",
+  "id":"gas"
+},
+{
+  "name":"Greece",
+  "type":"x",
+  "id":"gre"
+},
+{
+  "name":"Gulf of Lyon",
+  "type":"w",
+  "id":"lyo gol gulfofl lyon"
+},
+{
+  "name":"Gulf of Bothnia",
+  "type":"w",
+  "id":"gulfofb bothnia bot gob both"
+},
+{
+  "name":"Helgoland Bight",
+  "type":"w",
+  "id":"hel helgoland"
+},
+{
+  "name":"Holland",
+  "type":"x",
+  "id":"hol"
+},
+{
+  "name":"Ionian Sea",
+  "type":"w",
+  "id":"ion ionian"
+},
+{
+  "name":"Irish Sea",
+  "type":"w",
+  "id":"iri irish"
+},
+{
+  "name":"Kiel",
+  "type":"G",
+  "id":"kie"
+},
+{
+  "name":"Liverpool",
+  "type":"E",
+  "id":"lvp livp lpl"
+},
+{
+  "name":"Livonia",
+  "type":"l",
+  "id":"lvn livo lvo lva"
+},
+{
+  "name":"London",
+  "type":"E",
+  "id":"lon"
+},
+{
+  "name":"Marseilles",
+  "type":"F",
+  "id":"mar mars"
+},
+{
+  "name":"Mid-Atlantic Ocean",
+  "type":"w",
+  "id":"midatlantic mid mat mao midatlanticocean"
+},
+{
+  "name":"Moscow",
+  "type":"R",
+  "id":"mos"
+},
+{
+  "name":"Munich",
+  "type":"G",
+  "id":"mun"
+},
+{
+  "name":"Naples",
+  "type":"I",
+  "id":"nap"
+},
+{
+  "name":"North Atlantic Ocean",
+  "type":"w",
+  "id":"nao nat"
+},
+{
+  "name":"North Africa",
+  "type":"l",
+  "id":"naf nora"
+},
+{
+  "name":"North Sea",
+  "type":"w",
+  "id":"nth norsea nts"
+},
+{
+  "name":"Norway",
+  "type":"x",
+  "id":"nor nwy norw"
+},
+{
+  "name":"Norwegian Sea",
+  "type":"w",
+  "id":"nrg norwegian nwg norwsea"
+},
+{
+  "name":"Paris",
+  "type":"F",
+  "id":"par"
+},
+{
+  "name":"Picardy",
+  "type":"l",
+  "id":"pic"
+},
+{
+  "name":"Piedmont",
+  "type":"l",
+  "id":"pie"
+},
+{
+  "name":"Portugal",
+  "type":"x",
+  "id":"por"
+},
+{
+  "name":"Prussia",
+  "type":"l",
+  "id":"pru"
+},
+{
+  "name":"Rome",
+  "type":"I",
+  "id":"rom"
+},
+{
+  "name":"Ruhr",
+  "type":"l",
+  "id":"ruh"
+},
+{
+  "name":"Rumania",
+  "type":"x",
+  "id":"rum"
+},
+{
+  "name":"Serbia",
+  "type":"x",
+  "id":"ser"
+},
+{
+  "name":"Sevastopol",
+  "type":"R",
+  "id":"sev sevastapol"
+},
+{
+  "name":"Silesia",
+  "type":"l",
+  "id":"sil"
+},
+{
+  "name":"Skagerrak",
+  "type":"w",
+  "id":"ska"
+},
+{
+  "name":"Smyrna",
+  "type":"T",
+  "id":"smy"
+},
+{
+  "name":"Spain",
+  "type":"x",
+  "id":"spa"
+},
+{
+  "name":"St Petersburg",
+  "type":"R",
+  "id":"stp"
+},
+{
+  "name":"Sweden",
+  "type":"x",
+  "id":"swe"
+},
+{
+  "name":"Syria",
+  "type":"l",
+  "id":"syr"
+},
+{
+  "name":"Trieste",
+  "type":"A",
+  "id":"tri"
+},
+{
+  "name":"Tunis",
+  "type":"x",
+  "id":"tun"
+},
+{
+  "name":"Tuscany",
+  "type":"l",
+  "id":"tus"
+},
+{
+  "name":"Tyrolia",
+  "type":"l",
+  "id":"tyr tyl trl"
+},
+{
+  "name":"Tyrrhenian Sea",
+  "type":"w",
+  "id":"tyrrhenian tyn tyh tys tyrr"
+},
+{
+  "name":"Ukraine",
+  "type":"l",
+  "id":"ukr"
+},
+{
+  "name":"Venice",
+  "type":"I",
+  "id":"ven"
+},
+{
+  "name":"Vienna",
+  "type":"A",
+  "id":"vie"
+},
+{
+  "name":"Wales",
+  "type":"l",
+  "id":"wal"
+},
+{
+  "name":"Warsaw",
+  "type":"R",
+  "id":"war"
+},
+{
+  "name":"Western Mediterranean",
+  "type":"w",
+  "id":"westmed wms wme wes wmed west western"
+},
+{
+  "name":"Yorkshire",
+  "type":"l",
+  "id":"yor york yonkers"
+}
