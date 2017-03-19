@@ -1,17 +1,17 @@
 {
   "name":"Switzerland",
   "type":"l",
-  "id":"swi switz"
+  "id":"swi"
 },
 {
   "name":"Adriatic Sea",
   "type":"w",
-  "id":"adr adriatic"
+  "id":"adr"
 },
 {
   "name":"Aegean Sea",
   "type":"w",
-  "id":"aeg aegean"
+  "id":"aeg"
 },
 {
   "name":"Albania",
@@ -36,12 +36,12 @@
 {
   "name":"Baltic Sea",
   "type":"w",
-  "id":"bal baltic"
+  "id":"bal"
 },
 {
   "name":"Barents Sea",
   "type":"w",
-  "id":"bar barents"
+  "id":"bar"
 },
 {
   "name":"Belgium",
@@ -56,7 +56,7 @@
 {
   "name":"Black Sea",
   "type":"w",
-  "id":"bla black"
+  "id":"bla"
 },
 {
   "name":"Bohemia",
@@ -101,7 +101,7 @@
 {
   "name":"Eastern Mediterranean",
   "type":"w",
-  "id":"eastmed ems eme eas emed east eastern"
+  "id":"eas"
 },
 {
   "name":"Edinburgh",
@@ -111,7 +111,7 @@
 {
   "name":"English Channel",
   "type":"w",
-  "id":"eng english channel ech"
+  "id":"eng"
 },
 {
   "name":"Finland",
@@ -136,17 +136,17 @@
 {
   "name":"Gulf of Lyon",
   "type":"w",
-  "id":"lyo gol gulfofl lyon"
+  "id":"lyo"
 },
 {
   "name":"Gulf of Bothnia",
   "type":"w",
-  "id":"gulfofb bothnia bot gob both"
+  "id":"bot"
 },
 {
   "name":"Helgoland Bight",
   "type":"w",
-  "id":"hel helgoland"
+  "id":"hel"
 },
 {
   "name":"Holland",
@@ -156,12 +156,12 @@
 {
   "name":"Ionian Sea",
   "type":"w",
-  "id":"ion ionian"
+  "id":"ion"
 },
 {
   "name":"Irish Sea",
   "type":"w",
-  "id":"iri irish"
+  "id":"iri"
 },
 {
   "name":"Kiel",
@@ -171,12 +171,12 @@
 {
   "name":"Liverpool",
   "type":"E",
-  "id":"lvp livp lpl"
+  "id":"lvp"
 },
 {
   "name":"Livonia",
   "type":"l",
-  "id":"lvn livo lvo lva"
+  "id":"lvn"
 },
 {
   "name":"London",
@@ -186,12 +186,12 @@
 {
   "name":"Marseilles",
   "type":"F",
-  "id":"mar mars"
+  "id":"mar"
 },
 {
   "name":"Mid-Atlantic Ocean",
   "type":"w",
-  "id":"midatlantic mid mat mao midatlanticocean"
+  "id":"mao"
 },
 {
   "name":"Moscow",
@@ -211,27 +211,27 @@
 {
   "name":"North Atlantic Ocean",
   "type":"w",
-  "id":"nao nat"
+  "id":"nao"
 },
 {
   "name":"North Africa",
   "type":"l",
-  "id":"naf nora"
+  "id":"naf"
 },
 {
   "name":"North Sea",
   "type":"w",
-  "id":"nth norsea nts"
+  "id":"nth"
 },
 {
   "name":"Norway",
   "type":"x",
-  "id":"nor nwy norw"
+  "id":"nwy"
 },
 {
   "name":"Norwegian Sea",
   "type":"w",
-  "id":"nrg norwegian nwg norwsea"
+  "id":"nwg"
 },
 {
   "name":"Paris",
@@ -281,7 +281,7 @@
 {
   "name":"Sevastopol",
   "type":"R",
-  "id":"sev sevastapol"
+  "id":"sev"
 },
 {
   "name":"Silesia",
@@ -336,12 +336,12 @@
 {
   "name":"Tyrolia",
   "type":"l",
-  "id":"tyr tyl trl"
+  "id":"tyr"
 },
 {
   "name":"Tyrrhenian Sea",
   "type":"w",
-  "id":"tyrrhenian tyn tyh tys tyrr"
+  "id":"tys"
 },
 {
   "name":"Ukraine",
@@ -371,10 +371,10 @@
 {
   "name":"Western Mediterranean",
   "type":"w",
-  "id":"westmed wms wme wes wmed west western"
+  "id":"wes"
 },
 {
   "name":"Yorkshire",
   "type":"l",
-  "id":"yor york yonkers"
+  "id":"yor"
 }
