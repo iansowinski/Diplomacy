@@ -1,380 +1,531 @@
-{
+"swi":{
   "name":"Switzerland",
   "type":"l",
-  "id":"swi"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"adr":{
   "name":"Adriatic Sea",
   "type":"w",
-  "id":"adr"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"aeg":{
   "name":"Aegean Sea",
   "type":"w",
-  "id":"aeg"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"alb":{
   "name":"Albania",
   "type":"l",
-  "id":"alb"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"ank":{
   "name":"Ankara",
   "type":"T",
-  "id":"ank"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"apu":{
   "name":"Apulia",
   "type":"l",
-  "id":"apu"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"arm":{
   "name":"Armenia",
   "type":"l",
-  "id":"arm"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"bal":{
   "name":"Baltic Sea",
   "type":"w",
-  "id":"bal"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"bar":{
   "name":"Barents Sea",
   "type":"w",
-  "id":"bar"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"bel":{
   "name":"Belgium",
   "type":"x",
-  "id":"bel"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"ber":{
   "name":"Berlin",
   "type":"G",
-  "id":"ber"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"bla":{
   "name":"Black Sea",
   "type":"w",
-  "id":"bla"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"boh":{
   "name":"Bohemia",
   "type":"l",
-  "id":"boh"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"bre":{
   "name":"Brest",
   "type":"F",
-  "id":"bre"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"bud":{
   "name":"Budapest",
   "type":"A",
-  "id":"bud"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"bul":{
   "name":"Bulgaria",
   "type":"x",
-  "id":"bul"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"bur":{
   "name":"Burgundy",
   "type":"l",
-  "id":"bur"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"cly":{
   "name":"Clyde",
   "type":"l",
-  "id":"cly"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"con":{
   "name":"Constantinople",
   "type":"T",
-  "id":"con"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"den":{
   "name":"Denmark",
   "type":"x",
-  "id":"den"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"eas":{
   "name":"Eastern Mediterranean",
   "type":"w",
-  "id":"eas"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"edi":{
   "name":"Edinburgh",
   "type":"E",
-  "id":"edi"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"eng":{
   "name":"English Channel",
   "type":"w",
-  "id":"eng"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"fin":{
   "name":"Finland",
   "type":"l",
-  "id":"fin"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"gal":{
   "name":"Galicia",
   "type":"l",
-  "id":"gal"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"gas":{
   "name":"Gascony",
   "type":"l",
-  "id":"gas"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"gre":{
   "name":"Greece",
   "type":"x",
-  "id":"gre"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"lyo":{
   "name":"Gulf of Lyon",
   "type":"w",
-  "id":"lyo"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"bot":{
   "name":"Gulf of Bothnia",
   "type":"w",
-  "id":"bot"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"hel":{
   "name":"Helgoland Bight",
   "type":"w",
-  "id":"hel"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"hol":{
   "name":"Holland",
   "type":"x",
-  "id":"hol"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"ion":{
   "name":"Ionian Sea",
   "type":"w",
-  "id":"ion"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"iri":{
   "name":"Irish Sea",
   "type":"w",
-  "id":"iri"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"kie":{
   "name":"Kiel",
   "type":"G",
-  "id":"kie"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"lvp":{
   "name":"Liverpool",
   "type":"E",
-  "id":"lvp"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"lvn":{
   "name":"Livonia",
   "type":"l",
-  "id":"lvn"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"lon":{
   "name":"London",
   "type":"E",
-  "id":"lon"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"mar":{
   "name":"Marseilles",
   "type":"F",
-  "id":"mar"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
-  "name":"Mid-Atlantic Ocean",
+"mao":{
   "type":"w",
-  "id":"mao"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"mos":{
   "name":"Moscow",
   "type":"R",
-  "id":"mos"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"mun":{
   "name":"Munich",
   "type":"G",
-  "id":"mun"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"nap":{
   "name":"Naples",
   "type":"I",
-  "id":"nap"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"nao":{
   "name":"North Atlantic Ocean",
   "type":"w",
-  "id":"nao"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"naf":{
   "name":"North Africa",
   "type":"l",
-  "id":"naf"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"nth":{
   "name":"North Sea",
   "type":"w",
-  "id":"nth"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"nwy":{
   "name":"Norway",
   "type":"x",
-  "id":"nwy"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"nwg":{
   "name":"Norwegian Sea",
   "type":"w",
-  "id":"nwg"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"par":{
   "name":"Paris",
   "type":"F",
-  "id":"par"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"pic":{
   "name":"Picardy",
   "type":"l",
-  "id":"pic"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"pie":{
   "name":"Piedmont",
   "type":"l",
-  "id":"pie"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"por":{
   "name":"Portugal",
   "type":"x",
-  "id":"por"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"pru":{
   "name":"Prussia",
   "type":"l",
-  "id":"pru"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"rom":{
   "name":"Rome",
   "type":"I",
-  "id":"rom"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"ruh":{
   "name":"Ruhr",
   "type":"l",
-  "id":"ruh"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"rum":{
   "name":"Rumania",
   "type":"x",
-  "id":"rum"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"ser":{
   "name":"Serbia",
   "type":"x",
-  "id":"ser"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"sev":{
   "name":"Sevastopol",
   "type":"R",
-  "id":"sev"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"sil":{
   "name":"Silesia",
   "type":"l",
-  "id":"sil"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"ska":{
   "name":"Skagerrak",
   "type":"w",
-  "id":"ska"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"smy":{
   "name":"Smyrna",
   "type":"T",
-  "id":"smy"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"spa":{
   "name":"Spain",
   "type":"x",
-  "id":"spa"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"stp":{
   "name":"St Petersburg",
   "type":"R",
-  "id":"stp"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"swe":{
   "name":"Sweden",
   "type":"x",
-  "id":"swe"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"syr":{
   "name":"Syria",
   "type":"l",
-  "id":"syr"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"tri":{
   "name":"Trieste",
   "type":"A",
-  "id":"tri"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"tun":{
   "name":"Tunis",
   "type":"x",
-  "id":"tun"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"tus":{
   "name":"Tuscany",
   "type":"l",
-  "id":"tus"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"tyr":{
   "name":"Tyrolia",
   "type":"l",
-  "id":"tyr"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"tys":{
   "name":"Tyrrhenian Sea",
   "type":"w",
-  "id":"tys"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"ukr":{
   "name":"Ukraine",
   "type":"l",
-  "id":"ukr"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"ven":{
   "name":"Venice",
   "type":"I",
-  "id":"ven"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"vie":{
   "name":"Vienna",
   "type":"A",
-  "id":"vie"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"wal":{
   "name":"Wales",
   "type":"l",
-  "id":"wal"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"war":{
   "name":"Warsaw",
   "type":"R",
-  "id":"war"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"wes":{
   "name":"Western Mediterranean",
   "type":"w",
-  "id":"wes"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 },
-{
+"yor":{
   "name":"Yorkshire",
   "type":"l",
-  "id":"yor"
+  "neighbours":[],
+  "army_type":"",
+  "belongs_to":""
 }
