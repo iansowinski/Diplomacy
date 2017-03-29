@@ -165,3 +165,9 @@ describe Country  do
     end
   end
 end
+describe Player do
+  describe "new" do
+    possible_countries = :germany, :england, :russia, :austria, :italy, :turkey, :france
+    player_names = "Jan", "Maciej", "Mikołaj", "Michał", "Kuba", "Bartek", "Michał"
+    end
+end
