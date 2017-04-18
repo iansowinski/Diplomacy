@@ -1,3 +1,4 @@
+*.uxf
 *.swp
 scripts/
 Gemfile.lock
