@@ -41,6 +41,8 @@ Every game instance should have unique randomly-generated link - like in chat ro
 
 - 0.1 Creating standard configuration
   - Map logic
+  - What orders?
+  - Spain / Denmark problem
   - Implementation of game rules
   - Most important for gameplay objects
 - 0.2 Workable CLI implementation
