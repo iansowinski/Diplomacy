@@ -1,3 +1,5 @@
+require "GLOBALS.rb"
+
 class Region
   
   attr_reader :id, :name, :type, :neighbours, :supply_center, :field_id
@@ -34,7 +36,7 @@ class Region
     else
       raise(ArgumentError)
     end
-    if [:germany, :russia, :austria, :turkey, :england, :france, :italy, nil].include?(belongs_to) == true
+    if (COUNTRIES + [nil]).include?(belongs_to) == true
       @belongs_to = belongs_to
     else
       raise(ArgumentError)
