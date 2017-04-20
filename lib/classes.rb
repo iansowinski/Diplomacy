@@ -1,11 +1,11 @@
 # todo: add supply centers, resolve problems with Spain xD
 class Region
   
-  attr_reader :id, :name, :type, :neighbours
+  attr_reader :id, :name, :type, :neighbours, :supply_center
   attr_accessor :army_type, :belongs_to
   
-  def initialize (id, name, type, neighbours, army_type, belongs_to)
-    if id.class  == Symbol and id.length == 3
+  def initialize (id, name, type, neighbours, supply_center, army_type, belongs_to)
+    if id.class == Symbol and id.length == 3
       @id = id.to_sym
     else
       raise(ArgumentError)
@@ -40,6 +40,12 @@ class Region
     else
       raise(ArgumentError)
     end
+    if [TrueClass, FalseClass].include?(supply_center.class) == true
+      @supply_center = supply_center
+    else
+      raise(ArgumentError)
+    end
+
   end
 
 end
