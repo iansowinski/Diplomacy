@@ -1,1 +1,0 @@
-COUNTRIES = [:germany, :russia, :austria, :turkey, :england, :france, :italy]

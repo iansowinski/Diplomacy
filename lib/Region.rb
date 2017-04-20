@@ -1,11 +1,9 @@
-require "GLOBALS.rb"
-
 class Region
   
   attr_reader :id, :name, :type, :neighbours, :supply_center, :field_id
   attr_accessor :army_type, :belongs_to
   
-  def initialize (id, name, type, neighbours, supply_center, army_type, belongs_to, field_id)
+  def initialize (id, game, name, type, neighbours, supply_center, army_type, belongs_to, field_id)
     if id.class == Symbol and id.length == 3
       @id = id.to_sym
     else
@@ -36,7 +34,12 @@ class Region
     else
       raise(ArgumentError)
     end
-    if (COUNTRIES + [nil]).include?(belongs_to) == true
+    if game.class == Game
+      @game = game
+    else
+      raise(ArgumentError)
+    end
+    if (game.countries + [nil]).include?(belongs_to) == true
       @belongs_to = belongs_to
     else
       raise(ArgumentError)
