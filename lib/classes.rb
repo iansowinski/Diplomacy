@@ -1,5 +1,5 @@
 # todo: add supply centers, resolve problems with Spain xD
-class Country
+class Region
   
   attr_reader :id, :name, :type, :neighbours
   attr_accessor :army_type, :belongs_to
