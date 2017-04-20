@@ -1,4 +1,5 @@
-require "classes.rb"
+require "Region.rb"
+require "Game.rb"
 RSpec::Expectations.configuration.on_potential_false_positives = :nothing
 describe Region  do
   describe "new" do
