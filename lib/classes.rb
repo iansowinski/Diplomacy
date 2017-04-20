@@ -1,4 +1,3 @@
-# todo: add supply centers, resolve problems with Spain xD
 class Region
   
   attr_reader :id, :name, :type, :neighbours, :supply_center, :field_id
