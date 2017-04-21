@@ -21,7 +21,7 @@ class Region
     if type == :land or type == :water or type == :shore
       @type = type
     else
-      raise(ArgumentError, "type should be :land, :water or :shore")
+      raise(ArgumentError, "expected :land, :water or :shore, got #{type}")
     end
     if neighbours.class == Array and neighbours.size > 0
       neighbours.each do |neighbour|
@@ -32,33 +32,37 @@ class Region
         end
       end
       @neighbours = neighbours
+    elsif neighbours.class != Array
+      raise(ArgumentError, "expected Array, got neighbours.class")
     else
-      raise(ArgumentError)
+      raise(ArgumentError, "expected non-empty Array, got array of length #{neighbours.length}")
     end
     if game.class == Game
       @game = game
     else
-      raise(ArgumentError)
+      raise(ArgumentError, "expected Game, got #{game.class}")
     end
     if (game.countries + [nil]).include?(belongs_to) == true 
       @belongs_to = belongs_to
     else
-      raise(ArgumentError)
+      raise(ArgumentError, "expected proper countries Symbol variable or nil, got #{belongs_to}")
     end
     if [TrueClass, FalseClass].include?(supply_center.class) == true
       @supply_center = supply_center
     else
-      raise(ArgumentError)
+      raise(ArgumentError, "expected TrueClass or FalseClass, got #{supply_center.class}")
     end
     if [TrueClass, FalseClass].include?(army.class) == true
       @army = army
     else
-      raise(ArgumentError)
+      raise(ArgumentError, "expected TrueClass or FalseClass, got #{army.class}")
     end
     if field_id.class == Fixnum and field_id >= 0
       @field_id = field_id
+    elsif field_id.class != Fixnum
+      raise(ArgumentError, "expected Fixnum, got #{field_id.class}")
     else
-      raise(ArgumentError)
+      raise(ArgumentError, "expected value greater than 0, got #{field_id}")
     end
   end
 
