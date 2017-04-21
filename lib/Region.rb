@@ -5,7 +5,7 @@ class Region
   
   def initialize (id, game, name, type, neighbours, supply_center, belongs_to, field_id)
     if id.class == Symbol and id.length == 3
-      @id = id.to_sym
+      @id = id
     else
       raise(ArgumentError)
     end
