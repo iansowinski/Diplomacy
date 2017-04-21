@@ -1,9 +1,9 @@
 class Region
   
   attr_reader :id, :name, :type, :neighbours, :supply_center, :field_id
-  attr_accessor :belongs_to
+  attr_accessor :belongs_to, :army
   
-  def initialize (id, name, type, neighbours, supply_center, belongs_to, field_id, game)
+  def initialize (id, name, type, neighbours, supply_center, belongs_to, field_id, game, army)
     if id.class == Symbol and id.length == 3
       @id = id
     elsif id.class != Symbol
@@ -47,6 +47,11 @@ class Region
     end
     if [TrueClass, FalseClass].include?(supply_center.class) == true
       @supply_center = supply_center
+    else
+      raise(ArgumentError)
+    end
+    if [TrueClass, FalseClass].include?(army.class) == true
+      @army = army
     else
       raise(ArgumentError)
     end

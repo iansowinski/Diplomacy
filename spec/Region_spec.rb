@@ -19,11 +19,12 @@ describe Region  do
     supply = true
     field_id = 11
     game = Game.new()
+    army = true
     context "given wrong id" do
       it "should raise error" do
         wrong_items = ["pols", 1, nil, true, :adse, :ad, [], {}, "pol"]
         wrong_items.each do |wrong_item|
-          expect{Region.new(wrong_item, name, type, neighbours, supply, belongs, field_id, game)}.to raise_error(ArgumentError)
+          expect{Region.new(wrong_item, name, type, neighbours, supply, belongs, field_id, game, army)}.to raise_error(ArgumentError)
         end
       end
     end
@@ -31,7 +32,7 @@ describe Region  do
       it "should not raise error" do
         good_items = [:pol]
         good_items.each do |good_item|
-          expect{Region.new(good_item, name, type, neighbours, supply, belongs, field_id, game)}.to_not raise_error
+          expect{Region.new(good_item, name, type, neighbours, supply, belongs, field_id, game, army)}.to_not raise_error
         end
       end
     end
@@ -39,7 +40,7 @@ describe Region  do
       it "should raise error" do
         wrong_items = [1, nil, true, :pol, "", [], {}]
         wrong_items.each do |wrong_item|
-          expect{Region.new(id, wrong_item, type, neighbours, supply, belongs, field_id, game)}.to raise_error(ArgumentError)
+          expect{Region.new(id, wrong_item, type, neighbours, supply, belongs, field_id, game, army)}.to raise_error(ArgumentError)
         end
       end
     end
@@ -47,7 +48,7 @@ describe Region  do
       it "should not raise error" do
         good_items = ["Poland"]
         good_items.each do |good_item|
-          expect{Region.new(id, good_item, type, neighbours, supply, belongs, field_id, game)}.to_not raise_error
+          expect{Region.new(id, good_item, type, neighbours, supply, belongs, field_id, game, army)}.to_not raise_error
         end
       end
     end
@@ -55,7 +56,7 @@ describe Region  do
       it "should raise error" do
         wrong_items = ["pols", 1, nil, true, "dasdasd", :pol, [], {}]
         wrong_items.each do |wrong_item|
-          expect{Region.new(id, name, wrong_item, neighbours, supply, belongs, field_id, game)}.to raise_error(ArgumentError)
+          expect{Region.new(id, name, wrong_item, neighbours, supply, belongs, field_id, game, army)}.to raise_error(ArgumentError)
         end
       end
     end
@@ -63,7 +64,7 @@ describe Region  do
       it "should not raise error" do
         good_items = [:land, :water, :shore]
         good_items.each do |good_item|
-          expect{Region.new(id, name, good_item, neighbours, supply, belongs, field_id, game)}.to_not raise_error
+          expect{Region.new(id, name, good_item, neighbours, supply, belongs, field_id, game, army)}.to_not raise_error
         end
       end
     end
@@ -71,7 +72,7 @@ describe Region  do
       it "should raise error" do
         wrong_items = ["pols", 1, nil, true, "dasdasd", :pol, [],{},["pol", "fra"], [1,2,3]]
         wrong_items.each do |wrong_item|
-          expect{Region.new(id, name, type, wrong_item, supply, belongs, field_id, game)}.to raise_error(ArgumentError)
+          expect{Region.new(id, name, type, wrong_item, supply, belongs, field_id, game, army)}.to raise_error(ArgumentError)
         end
       end
     end
@@ -79,7 +80,7 @@ describe Region  do
       it "should not raise error" do
         good_items = [[:pol, :ger, :rus]]
         good_items.each do |good_item|
-          expect{Region.new(id, name, type, good_item, supply, belongs, field_id, game)}.to_not raise_error
+          expect{Region.new(id, name, type, good_item, supply, belongs, field_id, game, army)}.to_not raise_error
         end
       end
     end
@@ -87,7 +88,7 @@ describe Region  do
       it "should raise error" do
         wrong_items = ["pols", 1, true, "dasdasd", :ad, :pols, :pol, [],{},["pol", "fra"]]
         wrong_items.each do |wrong_item|
-          expect{Region.new(id, name, type, neighbours, supply, wrong_item, field_id, game)}.to raise_error
+          expect{Region.new(id, name, type, neighbours, supply, wrong_item, field_id, game, army)}.to raise_error
         end
       end
     end
@@ -95,23 +96,55 @@ describe Region  do
       it "should not raise error" do
         good_items = [:germany, :russia, :austria, :turkey, :england, :france, :italy, nil]
         good_items.each do |good_item|
-          expect{Region.new(id, name, type, neighbours, supply, good_item, field_id, game)}.to_not raise_error
+          expect{Region.new(id, name, type, neighbours, supply, good_item, field_id, game, army)}.to_not raise_error
+        end
+      end
+    end
+    context "given wrong field_id" do
+      it "should raise error" do
+        wrong_items = ["pols", false, nil, "dasdasd", :pol, [],{},["pol", "fra"], [1,2,3]]
+        wrong_items.each do |wrong_item|
+          expect{Region.new(id, name, type, neighbours, supply, belongs, wrong_item, game, army)}.to raise_error(ArgumentError)
+        end
+      end
+    end
+    context "given good field_id" do
+      it "should not raise error" do
+        good_items = [11, 20]
+        good_items.each do |good_item|
+          expect{Region.new(id, name, type, neighbours, supply, belongs, good_item, game, army)}.to_not raise_error
+        end
+      end
+    end
+    context "given wrong army" do
+      it "should raise error" do
+        wrong_items = ["pols", 1, nil, "dasdasd", :pol, [],{},["pol", "fra"], [1,2,3]]
+        wrong_items.each do |wrong_item|
+          expect{Region.new(id, name, type, neighbours, supply, belongs, field_id, game, wrong_item)}.to raise_error(ArgumentError)
+        end
+      end
+    end
+    context "given good army" do
+      it "should not raise error" do
+        good_items = [true, false]
+        good_items.each do |good_item|
+          expect{Region.new(id, name, type, neighbours, supply, belongs, field_id, game, good_item)}.to_not raise_error
         end
       end
     end
     context "given wrong supply_center" do
       it "should raise error" do
-        wrong_items = ["pols", false, nil, "dasdasd", :pol, [],{},["pol", "fra"], [1,2,3]]
+        wrong_items = ["pols", 1, nil, "dasdasd", :pol, [],{},["pol", "fra"], [1,2,3]]
         wrong_items.each do |wrong_item|
-          expect{Region.new(id, name, type, neighbours, supply, belongs, wrong_item, game)}.to raise_error(ArgumentError)
+          expect{Region.new(id, name, type, neighbours, wrong_item, belongs, field_id, game, army)}.to raise_error(ArgumentError)
         end
       end
     end
     context "given good supply_center" do
       it "should not raise error" do
-        good_items = [11, 20]
+        good_items = [true, false]
         good_items.each do |good_item|
-          expect{Region.new(id, name, type, neighbours, supply, belongs, good_item, game)}.to_not raise_error
+          expect{Region.new(id, name, type, neighbours, good_item, belongs, field_id, game, army)}.to_not raise_error
         end
       end
     end
@@ -124,7 +157,8 @@ describe Region  do
                 true,
                 :germany,
                 11,
-                game = Game.new())
+                game = Game.new(),
+                true)
   end
   describe "region.id" do 
     it "should be a symbol" do
@@ -152,8 +186,13 @@ describe Region  do
     end
   end
   describe "region.field_id" do
-    it "should be nil" do
+    it "should be 11" do
       expect(region.field_id).to eql(11)
+    end
+  end
+  describe "region.army" do
+    it "should be true" do
+      expect(region.army).to eql(true)
     end
   end
   describe "immutable instance variables" do
@@ -168,6 +207,8 @@ describe Region  do
     it "should assign properly" do
       region.belongs_to = :pol
       expect(region.belongs_to).to eql(:pol)
+      region.army = false
+      expect(region.army).to eql(false)
     end
     context "assigned strings, numbers or booleans" do
       it "should raise errors" do
