@@ -40,7 +40,7 @@ class Region
     else
       raise(ArgumentError)
     end
-    if game.countries.include?(belongs_to) == true or belongs_to == nil
+    if (game.countries + [nil]).include?(belongs_to) == true 
       @belongs_to = belongs_to
     else
       raise(ArgumentError)
