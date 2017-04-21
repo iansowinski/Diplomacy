@@ -3,7 +3,7 @@ class Region
   attr_reader :id, :name, :type, :neighbours, :supply_center, :field_id
   attr_accessor :army_type, :belongs_to
   
-  def initialize (id, game, name, type, neighbours, supply_center, army_type, belongs_to, field_id)
+  def initialize (id, game, name, type, neighbours, supply_center, belongs_to, field_id)
     if id.class == Symbol and id.length == 3
       @id = id.to_sym
     else
@@ -26,11 +26,6 @@ class Region
         end
       end
       @neighbours = neighbours
-    else
-      raise(ArgumentError)
-    end
-    if army_type == :army or army_type == :fleet or army_type == nil
-      @army_type = army_type
     else
       raise(ArgumentError)
     end
