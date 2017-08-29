@@ -1204,7 +1204,7 @@ for(let key in data) {
 	countryOnMap.addEventListener("mouseover", function(){
 		const header = document.getElementById("title")
 		const id = this.id
-		header.innerHTML = data[id].name
+		header.innerHTML = ":" + id
 		if(data[id].type === "w"){
 			header.style.color = "#0000ff"
 		} else {
