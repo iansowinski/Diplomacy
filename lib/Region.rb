@@ -1,70 +1,53 @@
+require './Config.rb'
+
 class Region
   
-  attr_reader :id, :name, :type, :neighbours, :supply_center, :field_id
-  attr_accessor :belongs_to, :army
+  attr_reader :id, :name, :type, :neighbours, :supply_center
+  attr_accessor :owner, :army
   
-  def initialize (id, name, type, neighbours, supply_center, belongs_to, field_id, game, army)
-    if id.class == Symbol and id.length == 3
-      @id = id
-    elsif id.class != Symbol
-      raise(ArgumentError, "expected Symbol, got #{id.class}")
-    else
-      raise(ArgumentError, "expected Symbol of length 3, got #{id.class} of length #{id.length}")
-    end
-    if name.class == String and name.length > 0
-      @name = name
-    elsif name.class != String
-      raise(ArgumentError, "expected String, got #{name.class}")
-    else 
-      raise(ArgumentError, "expected non-empty String, got String of length #{name.length}")
-    end
-    if type == :land or type == :water or type == :shore
-      @type = type
-    else
-      raise(ArgumentError, "expected :land, :water or :shore, got #{type}")
-    end
-    if neighbours.class == Array and neighbours.size > 0
-      neighbours.each do |neighbour|
-        if neighbour.class != Symbol
-          raise(ArgumentError, "expected Symbol, got #{id.class}")
-        elsif  neighbour.size != 3
-          raise(ArgumentError, "expected Symbol of length 3, got #{id.class} of length #{id.length}")
-        end
-      end
-      @neighbours = neighbours
-    elsif neighbours.class != Array
-      raise(ArgumentError, "expected Array, got neighbours.class")
-    else
-      raise(ArgumentError, "expected non-empty Array, got array of length #{neighbours.length}")
-    end
-    if game.class == Game
-      @game = game
-    else
-      raise(ArgumentError, "expected Game, got #{game.class}")
-    end
-    if (game.countries + [nil]).include?(belongs_to) == true 
-      @belongs_to = belongs_to
-    else
-      raise(ArgumentError, "expected proper countries Symbol variable or nil, got #{belongs_to}")
-    end
-    if [TrueClass, FalseClass].include?(supply_center.class) == true
-      @supply_center = supply_center
-    else
-      raise(ArgumentError, "expected TrueClass or FalseClass, got #{supply_center.class}")
-    end
-    if [TrueClass, FalseClass].include?(army.class) == true
-      @army = army
-    else
-      raise(ArgumentError, "expected TrueClass or FalseClass, got #{army.class}")
-    end
-    if field_id.class == Fixnum and field_id >= 0
-      @field_id = field_id
-    elsif field_id.class != Fixnum
-      raise(ArgumentError, "expected Fixnum, got #{field_id.class}")
-    else
-      raise(ArgumentError, "expected value greater than 0, got #{field_id}")
-    end
+  def initialize (id, name, type, supply_center, neighbours, army, owner)
+    @id = id
+    @name = name
+    @type = type
+    @owner = owner
+    @supply_center = supply_center
+    @army = army
+    @neighbours = neighbours
   end
 
+  def move_army_out(to_neigbour)
+    if neighbours.inclide?(to_neigbour.id) 
+      to_neigbour.move_army_in(self)
+      change_owner(to_neigbour.owner)
+      @army = nil
+  end
+
+  def move_army_in(from_neigbour)
+    change_owner(from_neigbour.owner)
+    @army = from_neigbour.army
+  end
+
+  def spawn_army(army)
+    @army = army
+  end
+
+  private
+    def change_owner(new_owner)
+      @owner = new_owner
+    end
+  end
 end
 
+class Map
+
+  attr_reader :regions
+
+  def initialize(regions_hash)
+    @regions = {}
+    regions_hash.each_with_index do |(key, value), index|
+      @regions[key] = Region.new(key, value[:name], value[:type], value[:supply_center], value[:neighbours], value[:army], value[:owner])
+    end
+  end
+end
+
+map = Map.new($regions_hash)
